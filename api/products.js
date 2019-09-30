@@ -22,7 +22,8 @@ function validProductUpdate(updatedProduct){
 }
 
 router.get('/', async (req,res) => {
-    const products = await getAllProducts()
+    console.log(req.query)
+    const products = await getAllProducts(req.query)
     res.json(products)
 })
 
