@@ -6,6 +6,8 @@ module.exports = {
   },
   getOneProduct(id){
       return knex('products').where('id', id).first();
+  },
+  updateOneProduct(id, product){
+      return knex('products').where('id',id).update(product, '*')
   }
-  
 }
