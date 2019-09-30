@@ -5,7 +5,7 @@ exports.up = function(knex) {
       table.string('productName')
       table.string('department')
       table.string('color')
-      table.integer('price')
+      table.decimal('price', 8, 2)
   })
 };
 
