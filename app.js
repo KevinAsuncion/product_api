@@ -14,7 +14,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/api/v1/products', products)
+//routes
+
+app.use('/api/v1/products', products);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
